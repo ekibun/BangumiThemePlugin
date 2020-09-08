@@ -1,8 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="soko.ekibun.bangumi.plugin.theme"
-          android:sharedUserId="soko.ekibun.bangumi.share"
-          android:sharedUserLabel="@string/share_label">
+          package="soko.ekibun.bangumi.plugin.noscore">
 
     <application
             android:allowBackup="true"
@@ -13,7 +11,8 @@
             tools:ignore="AllowBackup">
         <service
                 android:name=".Plugin"
-                android:exported="true">
+                android:exported="true"
+                tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="soko.ekibun.bangumi.plugins"/>
             </intent-filter>
